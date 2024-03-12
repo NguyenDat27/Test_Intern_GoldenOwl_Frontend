@@ -1,0 +1,53 @@
+.pagenotfound{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+  
+.cont-404{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-404 img{
+    height: 80vh;
+    width: 120vh;
+}
+
+.cont-404 button{
+    padding: 12px 15px;
+    background-color: #7E57C2;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    color: #fff;
+    font-size: medium;
+    font-weight: bold;
+}
+
+.cont-404 button:hover{
+    background-color: aqua;
+}
+
+@media screen and (max-width: 768px) {
+    .cont-404 img {
+      max-width: 100%;
+    }
+  
+    .cont-404 button {
+      font-size: 0.8em;
+    }
+}
+  
+@media screen and (max-width: 480px) {
+    .cont-404 img {
+      max-width: 100%;
+    }
+  
+    .cont-404 button {
+      font-size: 0.7em;
+    }
+}

@@ -1,0 +1,9 @@
+@font-face {
+  font-family: "Rubik", sans-serif;;
+  src: url('../public/Rubik-Black.ttf');
+}
+
+body {
+  font-family: "Rubik", sans-serif;
+  color: #303841;
+}

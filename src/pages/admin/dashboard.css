@@ -1,0 +1,13 @@
+.dashboard {
+    text-align: center; 
+}
+
+.dashboard h2 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+  
+.dashboard .insertbtn {
+    margin-bottom: 20px;
+}
+  
