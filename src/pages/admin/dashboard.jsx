@@ -3,6 +3,7 @@ import { Space, Table, Button, Modal, Form, Input, message, InputNumber } from '
 import axios from 'axios';
 import { deleteProductApi, getAllProductApi, createProductApi, updateProductApi } from '../../../api';
 import './dashboard.css'
+import { useNavigate } from 'react-router-dom';
 
 
 const Dashboard = () => {
@@ -14,6 +15,7 @@ const Dashboard = () => {
   const [formInsert] = Form.useForm();
   const [formUpdate] = Form.useForm();
   const name = localStorage.getItem('name');
+  const navigate = useNavigate();
 
   useEffect(() => {
     fetchData();
@@ -31,6 +33,20 @@ const Dashboard = () => {
       console.error('Error fetching products:', error);
     }
   };
+
+  const logout = () => {
+    try {
+      localStorage.removeItem("name");
+      localStorage.removeItem("email");
+      localStorage.removeItem("role");
+      localStorage.removeItem("token");
+      message.success("Logout success")
+      navigate("/login")
+    } catch (error) {
+      console.log(error);
+      message.error("Logout failed")
+    }
+  }
 
   const handleView = (record) => {
     Modal.info({
@@ -143,7 +159,7 @@ const Dashboard = () => {
       render: (_, record) => (
         <Space size="middle">
           <Button type="link" onClick={() => handleView(record)}>View</Button>
-          <Button type="link" onClick={() => handleUpdate(record)}>Update</Button>
+          <Button type="link" onClick={() => handleUpdate(record)}>Update</Button>git add README.md
           <Button type="link" danger onClick={() => handleDelete(record.id)}>Delete</Button>
         </Space>
       ),
@@ -153,6 +169,7 @@ const Dashboard = () => {
   return (
     <div className='dashboard'>
       <h2>{name}'s Dashboard</h2>
+      <Button className="logout" type="primary" onClick={logout}>Log out</Button>
       <Button className='insertbtn' type="primary" onClick={handleInsert}>Insert Product</Button>
       <Table columns={columns} dataSource={products} />
       <Modal

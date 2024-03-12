@@ -1,5 +1,7 @@
 .dashboard {
     text-align: center; 
+    padding: 20px;
+    position: relative;
 }
 
 .dashboard h2 {
@@ -10,4 +12,12 @@
 .dashboard .insertbtn {
     margin-bottom: 20px;
 }
-  
+
+.dashboard .logout {
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin-top: 10px;
+    margin-right: 10px;
+    background-color: crimson;
+}
