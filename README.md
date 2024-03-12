@@ -1,13 +1,32 @@
 # React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Login accounts:
 
-Currently, two official plugins are available:
+Admin:
+- Account: Admin@gmail.com
+- Password: 123456
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+User:
+- Account: dat@gmail.com
+- Password: 123456
 
-Link web: https://taupe-daifuku-80b8a8.netlify.app/
+Website description:
+
+User:
+- Login
+- Register
+- View products
+- Search products by name
+- Add products to cart
+
+Admin:
+- View all products
+- View product details
+- Add product
+- Update product
+- Delete product
+
+Link web: https://test-intern-goldenowl-frontend.netlify.app/
 
 Created by: Nguyễn Thành Đạt
 
