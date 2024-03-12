@@ -159,7 +159,7 @@ const Dashboard = () => {
       render: (_, record) => (
         <Space size="middle">
           <Button type="link" onClick={() => handleView(record)}>View</Button>
-          <Button type="link" onClick={() => handleUpdate(record)}>Update</Button>git add README.md
+          <Button type="link" onClick={() => handleUpdate(record)}>Update</Button>
           <Button type="link" danger onClick={() => handleDelete(record.id)}>Delete</Button>
         </Space>
       ),
