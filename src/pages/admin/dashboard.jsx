@@ -209,19 +209,19 @@ const Dashboard = () => {
           <Form.Item name="id" label="ID">
             <Input disabled />
           </Form.Item>
-          <Form.Item name="image" label="Image">
+          <Form.Item name="image" label="Image" rules={[{ required: true, message: 'Please input image URL product!' }]}>
             <Input />
           </Form.Item>
-          <Form.Item name="name" label="Name">
+          <Form.Item name="name" label="Name" rules={[{ required: true, message: 'Please input name product!' }]}>
             <Input />
           </Form.Item>
-          <Form.Item name="description" label="Description">
+          <Form.Item name="description" label="Description" rules={[{ required: true, message: 'Please input description product!' }]}>
             <Input />
           </Form.Item>
-          <Form.Item name="price" label="Price">
+          <Form.Item name="price" label="Price" rules={[{ required: true, message: 'Please input price product!' }]}>
             <InputNumber style={{ width: '100%' }} step={0.01} />
           </Form.Item>
-          <Form.Item name="color" label="Color">
+          <Form.Item name="color" label="Color" rules={[{ required: true, message: 'Please input color product!' }]}>
             <Input />
           </Form.Item>
         </Form>
