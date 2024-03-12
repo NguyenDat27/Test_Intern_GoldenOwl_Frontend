@@ -144,8 +144,8 @@ const Home = () => {
             <img className="logo" src={logo} alt="logo" />
             <Input.Search
               className='search'
-              placeholder='Enter name product'
-              style={{width:"180px"}}
+              placeholder='Enter name'
+              style={{width:"150px"}}
               onPressEnter={(value) => handleSearch(value)}
               onSearch={(value) => handleSearch(value)}
             />
