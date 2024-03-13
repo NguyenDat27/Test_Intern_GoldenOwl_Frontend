@@ -15,11 +15,14 @@ Website description:
 User:
 - Login
 - Register
+- Logout
 - View products
 - Search products by name
 - Add products to cart
 
 Admin:
+- Login
+- Logout
 - View all products
 - View product details
 - Add product
